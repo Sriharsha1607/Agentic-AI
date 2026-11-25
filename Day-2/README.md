@@ -1,20 +1,32 @@
-# Groq Chatbot – Sweet Crumbs Home Bakery
+## TASK-2: Groq Chatbot
 
-This project is a simple chatbot built using Python and Groq API for a fictional home bakery called Sweet Crumbs. It can answer basic customer questions about the bakery, menu prices and ordering details.
+Install the required Python package in Google Colab:
 
-### Menu
-- Plum cake – ₹500
-- Chocolate cake – ₹650
-- Cupcake – ₹80
+```python
+!pip install -q openai
+```
 
-### How to run
-1. Open `task2.ipynb` in Google Colab.
-2. Add your Groq API key to Colab Secrets using the name `GROQ_API_KEY`.
-3. Run the notebook cells in order.
-4. Start chatting when the `You:` prompt appears.
-5. Type `exit`, `quit` or `bye` to stop.
+## API Key Setup
 
-### Requirements
-- Google Colab
-- Groq API key
-- Internet connection
+1. Open the **Secrets** section in Google Colab.
+2. Add a secret named `GROQ_API_KEY`.
+3. Enable notebook access to this secret.
+
+## Usage
+
+Run the notebook cells in order. The chatbot uses Groq's API to answer customer questions about Sweet Crumbs Home Bakery, including menu prices, eggless options and ordering details.
+
+Start the interactive chat by running the final cell. Enter your questions at the `You:` prompt and type `bye`, `exit` or `quit` to end the conversation.
+
+Example:
+
+```text
+You: Do you have eggless cup cakes?
+
+Bot: Yes! We offer eggless versions of all our cakes,
+including cup cakes. Let me know if you'd like to order!
+```
+
+The chatbot is instructed to respond in English or Telugu, depending on the customer's language, and to keep its responses short and friendly.
+
+The notebook also includes examples of Python dictionaries, JSON, functions, decorators and basic error handling, along with a function to calculate menu prices based on quantity.
