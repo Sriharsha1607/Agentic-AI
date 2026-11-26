@@ -4,19 +4,6 @@ This notebook demonstrates how to set up, query, and evaluate three prominent La
 
 ---
 
-## 📋 Project Structure & Usage
-
-### 1. Sweet Crumbs Home Bakery Agent
-* **Purpose**: Simulates a friendly assistant managing customer cake queries with strict business rules.
-* **Key Code**: Uses `ChatGroq` coupled with custom system instructions to parse user questions, remember customer names (`history`), and ensure correct pricing and capabilities are relayed.
-* **Test Suite**: Includes an automated check (`run_tests()`) using a simple CSV template (`/content/test.csv`) to verify exact key-phrase presence like "yes", "500", and "owner".
-
-### 2. Sparkle Clean Car Wash Evaluator
-* **Purpose**: Simulates a car wash assistant providing answers about wash tiers, eco-friendly configurations, and booking protocols.
-* **Evaluation Engine**: Features a parameterized runner function `evaluate_model` executing 10 testing queries from `/content/custom_tests.csv` and reporting pass/fail scores.
-
----
-
 ## 📊 API Comparison & Performance Summary
 
 | Provider | Default Model Checked | Performance Notes & Error Profiles |
